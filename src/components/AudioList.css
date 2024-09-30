@@ -1,0 +1,14 @@
+.audio-list {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 70%; /* 70% del ancho de la pantalla en escritorio */
+    max-width: 800px; /* Opcional: límite de ancho para pantallas más grandes */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+@media (max-width: 768px) { /* Cambios para pantallas más pequeñas */
+    .audio-list {
+        width: 90%; /* 90% del ancho de la pantalla en móvil */
+    }
+}
