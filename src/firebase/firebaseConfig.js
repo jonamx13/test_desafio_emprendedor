@@ -1,7 +1,7 @@
-// firebaseConfig.js
+// src/firebase/firebaseConfig.js
 import { initializeApp } from "firebase/app";
 
-// Your web app's Firebase configuration
+// Tu configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBkd5ilYHBXs6RooqgiR8nbSRTj8jhbOuo",
   authDomain: "test-desafio-emprendedor.firebaseapp.com",
@@ -11,7 +11,7 @@ const firebaseConfig = {
   appId: "1:978045811158:web:b93ae0b338446beebf8c77"
 };
 
-// Initialize Firebase
+// Inicializa Firebase
 const app = initializeApp(firebaseConfig);
 
 // Exporta 'app' como default

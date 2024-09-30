@@ -1,16 +1,17 @@
-// App.js
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import Title from './components/Title';
-import AudioList from './components/AudioList'; // Asegúrate de que AudioList esté bien configurado
+import AudioList from './components/AudioList';
+import GlobalAudioProvider from './context/GlobalAudioContext'; // Importa el proveedor de contexto
 
+// Componente principal de la aplicación
 const App = () => {
-    return (
-        <div>
-            <Title />
-            <AudioList />
-        </div>
-    );
+  return (
+    <GlobalAudioProvider>
+      <Title />
+      <AudioList />
+    </GlobalAudioProvider>
+  );
 };
 
 export default App;

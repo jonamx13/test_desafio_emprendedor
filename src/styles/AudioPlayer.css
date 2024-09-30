@@ -24,15 +24,14 @@
     justify-content: space-between; /* Alinear contenido */
 }
 
-.play-button {
+.play-button, .stop-button {
     border: none;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    font-size: 20px;
-    background-color: #ccc; /* Color de fondo del botón */
+    background-color: #ccc;
     cursor: pointer;
-    margin-right: 10px; /* Espaciado entre botón y barra de progreso */
+    margin-right: 10px;
 }
 
 .progress-container {
