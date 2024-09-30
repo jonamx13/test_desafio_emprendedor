@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/test_desafio_emprendedor/static/css/main.b6b724a1.css",
+    "main.css": "/test_desafio_emprendedor/static/css/main.16c5011e.css",
     "main.js": "/test_desafio_emprendedor/static/js/main.7df14ae4.js",
     "static/js/453.65ff28a7.chunk.js": "/test_desafio_emprendedor/static/js/453.65ff28a7.chunk.js",
     "index.html": "/test_desafio_emprendedor/index.html",
-    "main.b6b724a1.css.map": "/test_desafio_emprendedor/static/css/main.b6b724a1.css.map",
+    "main.16c5011e.css.map": "/test_desafio_emprendedor/static/css/main.16c5011e.css.map",
     "main.7df14ae4.js.map": "/test_desafio_emprendedor/static/js/main.7df14ae4.js.map",
     "453.65ff28a7.chunk.js.map": "/test_desafio_emprendedor/static/js/453.65ff28a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6b724a1.css",
+    "static/css/main.16c5011e.css",
     "static/js/main.7df14ae4.js"
   ]
 }
