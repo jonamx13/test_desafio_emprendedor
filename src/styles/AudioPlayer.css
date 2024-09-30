@@ -3,25 +3,28 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 10px; /* Margen interior */
-    margin: 10px; /* Margen exterior */
-    background-color: #333; /* Caja gris oscuro */
-    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;
+    border-radius: 8px;
     color: white;
 }
 
 .audio-title {
-    margin-bottom: 5px; /* Espaciado entre título y audio player */
+    margin-bottom: 5px;
     font-size: 25px;
-    text-align: left; /* Alinear a la izquierda */
-    width: 100%; /* Asegúrate de que el título ocupe todo el ancho disponible */
+    font-style: italic;
+    font-weight: lighter;
+    color: rgb(214, 214, 214);
+    text-align: left; 
+    width: 100%;
 }
 
 .audio-player {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between; /* Alinear contenido */
+    justify-content: space-between;
 }
 
 .play-button, .stop-button {
@@ -36,22 +39,22 @@
 
 .progress-container {
     display: flex;
-    flex-direction: column; /* Para colocar las etiquetas de tiempo encima de la barra de progreso */
+    flex-direction: column;
     width: 100%;
-    margin-top: 5px; /* Espaciado superior */
-    align-items: center; /* Centrar el contenido horizontalmente */
+    margin-top: 5px;
+    align-items: center;
 }
 
 .time-labels {
     display: flex;
-    justify-content: space-between; /* Alinear tiempos a los extremos */
+    justify-content: space-between;
     width: 100%;
-    margin-bottom: 5px; /* Espaciado inferior para separar de la barra de progreso */
+    margin-bottom: 5px;
 }
 
 .current-time, .remaining-time {
-    font-size: 14px; /* Ajuste de tamaño de fuente para los tiempos */
-    color: white; /* Color de los tiempos */
+    font-size: 14px;
+    color: white;
     user-select: none;
 }
 
@@ -59,31 +62,30 @@
     position: relative;
     width: 100%;
     height: 10px;
-    background-color: #bbb;/* Caja gris */ 
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    background-color: #bbb;
+    border-radius: 5px;
+    cursor: pointer;
 }
-
 
 .progress {
     position: absolute;
     height: 100%;
-    background-color: rgb(16, 182, 238); /* Color del progreso escuchado */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: rgb(16, 182, 238);
+    border-radius: 5px;
 }
 
 .progress-circle {
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: #1b1b1b; /* Color del círculo */
+    background-color: #1b1b1b;
     border-radius: 50%;
-    top: -2.5px; /* Para centrarlo verticalmente */
-    transition: left 0.1s, background-color 0.3s, transform 0.3s; /* Añadir transición para el color y el tamaño */
+    top: -2.5px;
+    transition: left 0.1s, background-color 0.3s, transform 0.3s;
 }
 
 .progress-circle:hover {
-    background-color: darkgray; /* Cambiar el color al pasar el mouse */
-    transform: scale(1.2); /* Aumentar el tamaño un poco */
-    cursor: pointer; /* Cambiar el cursor a puntero */
+    background-color: darkgray;
+    transform: scale(1.2);
+    cursor: pointer;
 }

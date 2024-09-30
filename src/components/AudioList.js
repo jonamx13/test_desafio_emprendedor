@@ -37,7 +37,7 @@ const AudioList = () => {
                 const finalAudioFiles = sortedAudioFiles.map(audio => {
                     return {
                         ...audio,
-                        name: audio.name.replace(/Módulo\s*(\d+)-/, 'Módulo $1:')
+                        name: audio.name.replace(/Modulo\s*(\d+)-/, 'Módulo $1:')
                     };
                 });
 

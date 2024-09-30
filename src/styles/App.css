@@ -1,8 +1,25 @@
-/* App.css */
 body {
-  background-color: #131313; /* Fondo negro para toda la página */
-  color: white; /* Color del texto */
-  font-family: Arial, sans-serif; /* Fuente */
-  margin: 0; /* Sin margen por defecto */
-  padding: 0; /* Sin padding por defecto */
+  background: linear-gradient(to top left, #1a1a1a 10%, #333333 20%, #1b1b1b 50%, #383838 100%);
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Ensure it's above the background but below other content */
+}
+
+.background-bokeh {
+  position: absolute; /* Position to ensure it's on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Higher z-index than AudioList and Title */
 }

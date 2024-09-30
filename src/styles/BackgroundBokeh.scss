@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+// Updated primary colors to grayscale
+$primary_colors: #000000, #333333, #666666, #999999, #CCCCCC, #E0E0E0, #FFFFFF;
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -11;
+  animation: spin 300s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+@function create-palette() {
+  $palette: ();
+  @for $i from 1 through 150 {
+      $palette: append($palette, mix(nth($primary_colors, random(length($primary_colors))), nth($primary_colors, random(length($primary_colors))), 60%));
+  }
+  @return $palette;
+}
+
+$palette: create-palette();
+
+@each $color in $palette {
+  $size: random(100) + px;
+  .circle:nth-child(#{index($palette, $color)}) {
+      background: $color;
+      box-shadow: 0 0 random(10) + px random(10) + px $color;
+      top: random(100) + 0%;
+      left: random(100) + 0%;
+      width: $size;
+      height: $size;
+      opacity: random(10) / 50;
+      animation: float#{index($palette, $color)} 20s infinite linear;
+  }
+}
+
+@for $i from 1 through 150 {
+  $movex: random(100) - 20 + px;
+  $movey: random(400) - 300 + px;
+  $movex2: random(200) - 50 + px;
+  $movey2: random(400) - 100 + px;
+  @keyframes float#{$i} {
+      40% {
+          transform: translateX($movex) translateY($movey);
+      }
+      80% {
+          transform: translateX($movex2) translateY($movey2);
+      }
+  }
+}
+
+.colorizer1, .colorizer2, .colorizer3, .colorizer4 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  filter: blur(130px);
+}
+
+.colorizer1 {
+  border-radius: 50%;
+  // Light gray gradient
+  background: linear-gradient(135deg, #CCCCCC, #E0E0E0);
+}
+
+.colorizer2 {
+  top: 20%;
+  left: 70%;
+  background: #666666; // Dark gray
+}
+
+.colorizer3 {
+  top: 80%;
+  left: -15%;
+  background: #333333; // Darker gray
+  filter: blur(80px);
+  border-radius: 50%;
+}
+
+.colorizer4 {
+  top: 20%;
+  left: 35%;
+  width: 100px;
+  height: 100px;
+  background: #999999; // Medium gray
+  filter: blur(80px);
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}

@@ -1,5 +1,6 @@
-/* Title.css */
 .title {
+    font-weight: black;
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 2rem;
     text-align: center;

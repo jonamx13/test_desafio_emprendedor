@@ -2,16 +2,17 @@ import React from 'react';
 import './styles/App.css';
 import Title from './components/Title';
 import AudioList from './components/AudioList';
-import GlobalAudioProvider from './context/GlobalAudioContext'; // Importa el proveedor de contexto
+import GlobalAudioProvider from './context/GlobalAudioContext';
+import BackgroundBokeh from './components/BackgroundBokeh';
 
-// Componente principal de la aplicación
 const App = () => {
-  return (
-    <GlobalAudioProvider>
-      <Title />
-      <AudioList />
-    </GlobalAudioProvider>
-  );
+    return (
+        <GlobalAudioProvider>
+            <Title />
+            <AudioList />
+            <BackgroundBokeh />
+        </GlobalAudioProvider>
+    );
 };
 
 export default App;
