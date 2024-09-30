@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/test_desafio_emprendedor/static/css/main.c44e7bd0.css",
-    "main.js": "/test_desafio_emprendedor/static/js/main.c7a8e9f2.js",
+    "main.css": "/test_desafio_emprendedor/static/css/main.2476273c.css",
+    "main.js": "/test_desafio_emprendedor/static/js/main.b1564b14.js",
     "static/js/453.65ff28a7.chunk.js": "/test_desafio_emprendedor/static/js/453.65ff28a7.chunk.js",
     "index.html": "/test_desafio_emprendedor/index.html",
-    "main.c44e7bd0.css.map": "/test_desafio_emprendedor/static/css/main.c44e7bd0.css.map",
-    "main.c7a8e9f2.js.map": "/test_desafio_emprendedor/static/js/main.c7a8e9f2.js.map",
+    "main.2476273c.css.map": "/test_desafio_emprendedor/static/css/main.2476273c.css.map",
+    "main.b1564b14.js.map": "/test_desafio_emprendedor/static/js/main.b1564b14.js.map",
     "453.65ff28a7.chunk.js.map": "/test_desafio_emprendedor/static/js/453.65ff28a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c44e7bd0.css",
-    "static/js/main.c7a8e9f2.js"
+    "static/css/main.2476273c.css",
+    "static/js/main.b1564b14.js"
   ]
 }
